@@ -19,8 +19,11 @@ class MyWidget(QMainWindow):
     def paintEvent(self, event):
         if self.do_paint:
             qp = QPainter(self)
-            qp.setBrush(QBrush(QColor("yellow")))
             for i in range(random.randint(1, 15)):
+                r1 = random.randint(0, 255)
+                g1 = random.randint(0, 255)
+                b1 = random.randint(0, 255)
+                qp.setBrush(QBrush(QColor(r1, g1, b1)))
                 r = random.randint(10, 100) // 2
                 x = random.randint(100, 700)
                 y = random.randint(100, 500)

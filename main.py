@@ -8,7 +8,7 @@ class MyWidget(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        uic.loadUi("ui.ui", self)
+        uic.loadUi("UI.ui", self)
         self.do_paint = False
         self.pushbtn.clicked.connect(self.draw_yellow_ellipse)
 
